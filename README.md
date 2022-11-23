@@ -6,6 +6,9 @@ https://github.com/SNQ-2001/ScreenTimeout
 ```
 You can also clone the repository and build the library locally.
 
+## Demo
+.assets/demo.mp4
+
 ## Usage
 ```swift
 import SwiftUI
