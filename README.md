@@ -1,13 +1,13 @@
 # ScreenTimeout
+
+https://user-images.githubusercontent.com/84154073/203605605-59d1b43c-a81b-45f5-8b85-c12688fd91a7.mp4
+
 ## Installation
 ScreenTimeout can be installed with the Swift Package Manager:
 ```
 https://github.com/SNQ-2001/ScreenTimeout
 ```
 You can also clone the repository and build the library locally.
-
-## Demo
-.assets/demo.mp4
 
 ## Usage
 ```swift
