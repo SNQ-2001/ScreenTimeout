@@ -36,15 +36,18 @@ fileprivate struct Timeout<T: View>: View {
             }
     }
 
-    private func start() {
-        if states == .timeout {
-            states = .active
-            perform(.active)
+    private func changeScreenStatus(status: ScreenStates) {
+        if self.states != status {
+            states = status
+            perform(status)
         }
+    }
+
+    private func start() {
+        changeScreenStatus(status: .active)
         timer?.invalidate()
         timer = Timer.scheduledTimer(withTimeInterval: seconds, repeats: false) { _ in
-            states = .timeout
-            perform(.timeout)
+            changeScreenStatus(status: .timeout)
         }
     }
 
